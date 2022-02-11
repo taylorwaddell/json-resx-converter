@@ -1,0 +1,27 @@
+<data name="operational" xml:space="perserve">
+      <value>эксплуатационный</value>
+  </data>
+<data name="please select the date for the report you" xml:space="perserve">
+      <value>пожалуйста, выберите дату для отчета вы</value>
+  </data>
+<data name="processBuilderIntro" xml:space="perserve">
+      <value>Мы также добавили наш <b>Process Builder</b> в облако производительности, что обеспечивает максимальную возможность настройки.</value>
+  </data>
+<data name="psig" xml:space="perserve">
+      <value>псиг</value>
+  </data>
+<data name="pvsvFailureValidation" xml:space="perserve">
+      <value>Должны быть отремонтированы, заменены или выведены из эксплуатации.</value>
+  </data>
+<data name="rejectIncident" xml:space="perserve">
+      <value>Предупреждение: Если инцидент отклоняется, он полностью останавливается и не может быть доступен снова для продвижения. Если намерение состоит в том, чтобы вернуться к предыдущему шагу для дальнейшего рассмотрения или оценки, используйте вместо этого опцию «Возврат».</value>
+  </data>
+<data name="rejectIncidentAtStep" xml:space="perserve">
+      <value>Инцидент на шаге {{value}}?</value>
+  </data>
+<data name="rejectMoc" xml:space="perserve">
+      <value>Предупреждение: Если MOC отклоняется, он полностью останавливается и не может быть доступен снова для продвижения. Если намерение состоит в том, чтобы вернуться к предыдущему шагу для дальнейшего рассмотрения или оценки, используйте вместо этого опцию «Возврат».</value>
+  </data>
+<data name="rejectMocAtStep" xml:space="perserve">
+      <value>MOC на шаге {{value}}?</value>
+  </data>
