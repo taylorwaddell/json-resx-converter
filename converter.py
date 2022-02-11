@@ -26,7 +26,8 @@ print(f"{style.CYAN}{style.FAINT}Chosen file:  {chosen}{style.ENDC}")
 # Recieve lang code & Setting file name
 langCode = input(f"{style.CYAN}Enter language code: {style.ENDC}")
 originPath = "./exports"
-fileName = f"SharedResource.{langCode}.resx"
+fileNamePrefix = "TheLanguage"
+fileName = f"{fileNamePrefix}.{langCode}.resx"
 overwrite = False
 openFlag = ""
 
@@ -56,4 +57,4 @@ for attribute, value in ogDict.items():
 print(f"{style.CYAN}...{style.ENDC}")
 
 #Success message
-print(f"{style.OK}{style.BOLD}SUCCESS! You will find your RESX file in the ./exports folder (or your custom path).{style.ENDC}")
+print(f"{style.OK}{style.BOLD}SUCCESS! You will find your RESX file in the {originPath} folder (or your custom path).{style.ENDC}")
