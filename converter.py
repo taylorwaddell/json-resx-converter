@@ -7,13 +7,22 @@ import tkinter as tk
 from tkinter import filedialog
 
 class style:
-    CYAN = '\033[36m'
-    WARN = '\033[33m'
-    OK = '\033[0;32m'
-    FAIL = '\033[31m'
-    FAINT = "\033[2m"
-    BOLD = "\033[1m"
-    ENDC = '\033[0m'
+    style.DEF = '--  '
+    style.WARN = '??  '
+    style.OK = '))  '
+    style.FAIL = '!!  '
+    style.FAINT = "  "
+    style.BOLD = ""
+    style.ENDC = ''
+
+if os.name == "Darwin":
+    style.DEF = '\033[36m'
+    style.WARN = '\033[33m'
+    style.OK = '\033[0;32m'
+    style.FAIL = '\033[31m'
+    style.FAINT = "\033[2m"
+    style.BOLD = "\033[1m"
+    style.ENDC = '\033[0m'
 
 # Choosing File
 root = tk.Tk()
@@ -45,12 +54,12 @@ else:
     openFlag = "x"
 
 # Create or open file
-open(f"{originPath}/{fileName}", openFlag)
-edit = open(f"{originPath}/{fileName}", "a")
+open(f"{originPath}/{fileName}", openFlag, encoding="utf8")
+edit = open(f"{originPath}/{fileName}", "a", encoding="utf8")
 print(f"{style.CYAN}...{style.ENDC}")
 
 # Execute conversion
-with open(chosen[0], "r") as og:
+with open(chosen[0], "r", encoding="utf8") as og:
     ogDict = json.load(og)
 for attribute, value in ogDict.items():
     edit.write(f'<data name="{attribute}" xml:space="perserve">\n      <value>{value}</value>\n  </data>\n')
