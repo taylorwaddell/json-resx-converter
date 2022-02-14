@@ -1,6 +1,4 @@
 # JSON -> RESX CONVERTER
-For the best reading experience right click this README.md file in the file navigator and select `Open Preview`.
-
 <br >
 
 ### ( ! ) PREREQUISITES:
