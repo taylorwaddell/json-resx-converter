@@ -7,13 +7,13 @@ import tkinter as tk
 from tkinter import filedialog
 
 class style:
-    style.DEF = '--  '
-    style.WARN = '??  '
-    style.OK = '))  '
-    style.FAIL = '!!  '
-    style.FAINT = "  "
-    style.BOLD = ""
-    style.ENDC = ''
+    DEF = '--  '
+    WARN = '??  '
+    OK = '))  '
+    FAIL = '!!  '
+    FAINT = "  "
+    BOLD = ""
+    ENDC = ''
 
 if os.name == "Darwin":
     style.DEF = '\033[36m'
@@ -62,7 +62,7 @@ print(f"{style.CYAN}...{style.ENDC}")
 with open(chosen[0], "r", encoding="utf8") as og:
     ogDict = json.load(og)
 for attribute, value in ogDict.items():
-    edit.write(f'<data name="{attribute}" xml:space="perserve">\n      <value>{value}</value>\n  </data>\n')
+    edit.write(f'<data name="{attribute}" xml:space="preserve">\n      <value>{value}</value>\n  </data>\n')
 print(f"{style.CYAN}...{style.ENDC}")
 
 #Success message
